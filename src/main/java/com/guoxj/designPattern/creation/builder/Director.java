@@ -25,16 +25,4 @@ public class Director {
         return product;
     }
 
-    @Override
-    public Director clone() throws CloneNotSupportedException {
-        return (Director) super.clone();
-    }
-
-    public static void main(String[] args) throws CloneNotSupportedException {
-        Director director = new Director();
-        Director clone = director.clone();
-        System.out.println(director);
-        System.out.println(clone);
-    }
-
 }
